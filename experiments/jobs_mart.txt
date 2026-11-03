@@ -1,0 +1,458 @@
+# Main regime task (19,1), Sections 5.1-5.3, incl. the 2026 holdout
+kospi 42 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+kosdaq 42 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+nasdaq 42 --e1 --years 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+kospi 43 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+kosdaq 43 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+nasdaq 43 --e1 --years 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+kospi 44 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+kosdaq 44 --e1 --years 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+nasdaq 44 --e1 --years 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026
+
+# Per-asset standardization (X1) and pooled labels (X2), Section 5.4
+kospi 42 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 42 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+kosdaq 42 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+nasdaq 42 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+kospi 43 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+kosdaq 43 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+nasdaq 43 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+kospi 44 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+kosdaq 44 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+nasdaq 44 --label_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3
+
+# Longer horizons (15,5) and (10,10)
+kospi 42 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --horizon 5 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 42 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --horizon 10 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+
+# Identity controls: per-asset logit bias, permuted identity
+kospi 42 --variants temporal_asset_bias temporal_asset_emb_perm
+kosdaq 42 --variants temporal_asset_bias temporal_asset_emb_perm
+nasdaq 42 --variants temporal_asset_bias temporal_asset_emb_perm
+kospi 43 --variants temporal_asset_bias temporal_asset_emb_perm
+kosdaq 43 --variants temporal_asset_bias temporal_asset_emb_perm
+nasdaq 43 --variants temporal_asset_bias temporal_asset_emb_perm
+kospi 44 --variants temporal_asset_bias temporal_asset_emb_perm
+kosdaq 44 --variants temporal_asset_bias temporal_asset_emb_perm
+nasdaq 44 --variants temporal_asset_bias temporal_asset_emb_perm
+
+# Unseen assets (ranks 21-40), Section 5.6
+kospi 42 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --transfer --std_mode pooled --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 42 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --transfer --std_mode per_asset --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+
+# Robustness, Section 5.7: MASTER, task (0,20), top-50 universe, seeds 45/46, hyperparameters
+kospi 42 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kosdaq 42 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+nasdaq 42 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kospi 43 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kosdaq 43 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+nasdaq 43 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kospi 44 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kosdaq 44 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+nasdaq 44 --variants master master_asset_emb master_no_inter master_no_inter_asset_emb
+kospi 42 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 42 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 42 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 43 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 43 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 43 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 44 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kosdaq 44 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+nasdaq 44 --horizon 20 --variants temporal_only temporal_asset_emb temporal_graph_feature_corr_classwise_r3 temporal_cross_asset
+kospi 42 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --top_n 50 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 45 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 45 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 45 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 46 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 46 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 46 --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --d_model 64 --lr 1e-3 --tag d64_lr1e-3 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+kosdaq 42 --d_model 64 --lr 1e-3 --tag d64_lr1e-3 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+nasdaq 42 --d_model 64 --lr 1e-3 --tag d64_lr1e-3 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+kospi 42 --d_model 32 --lr 3e-4 --tag d32_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+kosdaq 42 --d_model 32 --lr 3e-4 --tag d32_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+nasdaq 42 --d_model 32 --lr 3e-4 --tag d32_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+kospi 42 --d_model 64 --lr 3e-4 --tag d64_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+kosdaq 42 --d_model 64 --lr 3e-4 --tag d64_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+nasdaq 42 --d_model 64 --lr 3e-4 --tag d64_lr3e-4 --variants temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3
+
+# Nasdaq without GOOG (data caveats)
+nasdaq 42 --exclude_codes GOOG --e1 --years 2020 2021 2022 2023 2024 2025
+nasdaq 43 --exclude_codes GOOG --e1 --years 2020 2021 2022 2023 2024 2025
+nasdaq 44 --exclude_codes GOOG --e1 --years 2020 2021 2022 2023 2024 2025
+
+# Relation-rich universes, Section 5.8 (MART, MASTER, seeds 45/46)
+kospi 42 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe corr --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe leadlag --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 42 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 42 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 43 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 43 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 43 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 44 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 44 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 44 --universe corr --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 42 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 42 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 42 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 43 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 43 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 43 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 44 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kosdaq 44 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+nasdaq 44 --universe leadlag --label_mode per_asset --variants master_asset_emb master_no_inter_asset_emb
+kospi 42 --universe corr --label_mode xsret --variants master master_no_inter
+kosdaq 42 --universe corr --label_mode xsret --variants master master_no_inter
+nasdaq 42 --universe corr --label_mode xsret --variants master master_no_inter
+kospi 43 --universe corr --label_mode xsret --variants master master_no_inter
+kosdaq 43 --universe corr --label_mode xsret --variants master master_no_inter
+nasdaq 43 --universe corr --label_mode xsret --variants master master_no_inter
+kospi 44 --universe corr --label_mode xsret --variants master master_no_inter
+kosdaq 44 --universe corr --label_mode xsret --variants master master_no_inter
+nasdaq 44 --universe corr --label_mode xsret --variants master master_no_inter
+kospi 42 --universe leadlag --label_mode xsret --variants master master_no_inter
+kosdaq 42 --universe leadlag --label_mode xsret --variants master master_no_inter
+nasdaq 42 --universe leadlag --label_mode xsret --variants master master_no_inter
+kospi 43 --universe leadlag --label_mode xsret --variants master master_no_inter
+kosdaq 43 --universe leadlag --label_mode xsret --variants master master_no_inter
+nasdaq 43 --universe leadlag --label_mode xsret --variants master master_no_inter
+kospi 44 --universe leadlag --label_mode xsret --variants master master_no_inter
+kosdaq 44 --universe leadlag --label_mode xsret --variants master master_no_inter
+nasdaq 44 --universe leadlag --label_mode xsret --variants master master_no_inter
+kospi 45 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 45 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 46 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 46 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 45 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 45 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 46 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 46 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 45 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 45 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 46 --universe leadlag --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 46 --universe corr --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+
+# Placebo universe (random 20 of the top 100), Section 5.8
+kospi 42 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe random --label_mode xsret --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --universe random --label_mode per_asset --variants temporal_only temporal_asset_emb temporal_cross_asset temporal_cross_asset_no_ae temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+
+# Identity-free comparisons, Section 5.9
+kospi 42 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 42 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kospi 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kospi 43 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 43 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kospi 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kospi 44 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 44 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kospi 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kospi 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kosdaq 42 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 42 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kosdaq 43 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 43 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kosdaq 44 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 44 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+nasdaq 42 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 42 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+nasdaq 43 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 43 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+nasdaq 44 --universe corr --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 44 --universe leadlag --label_mode xsret --variants temporal_cross_asset_no_ae
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_cross_asset_no_ae
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_cross_asset_no_ae
+kospi 42 --variants temporal_cross_asset_no_ae
+kospi 42 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 42 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 43 --variants temporal_cross_asset_no_ae
+kospi 43 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 43 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 44 --variants temporal_cross_asset_no_ae
+kospi 44 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 44 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 42 --variants temporal_cross_asset_no_ae
+kosdaq 42 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 42 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 43 --variants temporal_cross_asset_no_ae
+kosdaq 43 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 43 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 44 --variants temporal_cross_asset_no_ae
+kosdaq 44 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 44 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 42 --variants temporal_cross_asset_no_ae
+nasdaq 42 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 42 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 43 --variants temporal_cross_asset_no_ae
+nasdaq 43 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 43 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 44 --variants temporal_cross_asset_no_ae
+nasdaq 44 --universe corr --label_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 44 --universe leadlag --label_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 42 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 42 --top_n 50 --variants temporal_cross_asset_no_ae
+kospi 43 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 43 --top_n 50 --variants temporal_cross_asset_no_ae
+kospi 44 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kospi 44 --top_n 50 --variants temporal_cross_asset_no_ae
+kosdaq 42 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 42 --top_n 50 --variants temporal_cross_asset_no_ae
+kosdaq 43 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 43 --top_n 50 --variants temporal_cross_asset_no_ae
+kosdaq 44 --std_mode per_asset --variants temporal_cross_asset_no_ae
+kosdaq 44 --top_n 50 --variants temporal_cross_asset_no_ae
+nasdaq 42 --std_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 42 --top_n 50 --variants temporal_cross_asset_no_ae
+nasdaq 43 --std_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 43 --top_n 50 --variants temporal_cross_asset_no_ae
+nasdaq 44 --std_mode per_asset --variants temporal_cross_asset_no_ae
+nasdaq 44 --top_n 50 --variants temporal_cross_asset_no_ae
+kospi 42 --variants temporal_ctxmean
+kospi 42 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kospi 42 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kospi 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kospi 43 --variants temporal_ctxmean
+kospi 43 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kospi 43 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kospi 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kospi 44 --variants temporal_ctxmean
+kospi 44 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kospi 44 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kospi 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kosdaq 42 --variants temporal_ctxmean
+kosdaq 42 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kosdaq 42 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kosdaq 43 --variants temporal_ctxmean
+kosdaq 43 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kosdaq 43 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kosdaq 44 --variants temporal_ctxmean
+kosdaq 44 --universe corr --label_mode per_asset --variants temporal_ctxmean
+kosdaq 44 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+nasdaq 42 --variants temporal_ctxmean
+nasdaq 42 --universe corr --label_mode per_asset --variants temporal_ctxmean
+nasdaq 42 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+nasdaq 43 --variants temporal_ctxmean
+nasdaq 43 --universe corr --label_mode per_asset --variants temporal_ctxmean
+nasdaq 43 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+nasdaq 44 --variants temporal_ctxmean
+nasdaq 44 --universe corr --label_mode per_asset --variants temporal_ctxmean
+nasdaq 44 --universe leadlag --label_mode per_asset --variants temporal_ctxmean
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_ctxmean
+kospi 42 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 42 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kospi 42 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 42 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kospi 43 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 43 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kospi 43 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 43 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kospi 44 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 44 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kospi 44 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kospi 44 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 42 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 42 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 42 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 42 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 43 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 43 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 43 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 43 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 44 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 44 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+kosdaq 44 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+kosdaq 44 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 42 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 42 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 42 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 42 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 43 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 43 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 43 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 43 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 44 --universe corr --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 44 --universe corr --label_mode xsret --variants corrvote_no_asset_emb
+nasdaq 44 --universe leadlag --label_mode per_asset --variants corrvote_no_asset_emb
+nasdaq 44 --universe leadlag --label_mode xsret --variants corrvote_no_asset_emb
+kospi 42 --universe corr --label_mode per_asset --variants master master_no_inter
+kospi 42 --universe leadlag --label_mode per_asset --variants master master_no_inter
+kospi 43 --universe corr --label_mode per_asset --variants master master_no_inter
+kospi 43 --universe leadlag --label_mode per_asset --variants master master_no_inter
+kospi 44 --universe corr --label_mode per_asset --variants master master_no_inter
+kospi 44 --universe leadlag --label_mode per_asset --variants master master_no_inter
+kosdaq 42 --universe corr --label_mode per_asset --variants master master_no_inter
+kosdaq 42 --universe leadlag --label_mode per_asset --variants master master_no_inter
+kosdaq 43 --universe corr --label_mode per_asset --variants master master_no_inter
+kosdaq 43 --universe leadlag --label_mode per_asset --variants master master_no_inter
+kosdaq 44 --universe corr --label_mode per_asset --variants master master_no_inter
+kosdaq 44 --universe leadlag --label_mode per_asset --variants master master_no_inter
+nasdaq 42 --universe corr --label_mode per_asset --variants master master_no_inter
+nasdaq 42 --universe leadlag --label_mode per_asset --variants master master_no_inter
+nasdaq 43 --universe corr --label_mode per_asset --variants master master_no_inter
+nasdaq 43 --universe leadlag --label_mode per_asset --variants master master_no_inter
+nasdaq 44 --universe corr --label_mode per_asset --variants master master_no_inter
+nasdaq 44 --universe leadlag --label_mode per_asset --variants master master_no_inter
+
+# Cross-sectional ranking task, Section 6 (MART and MASTER, H=1 and H=5)
+kospi 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants temporal_only temporal_asset_emb temporal_asset_bias temporal_cross_asset temporal_graph_feature_corr_classwise_r3 corrvote_perm_p
+kospi 42 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kospi 43 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kospi 44 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 1 --variants master master_asset_emb master_no_inter
+kospi 42 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+kospi 43 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+kospi 44 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 5 --variants master master_asset_emb master_no_inter
+
+# MASTER at a configuration closer to the published one, Section 6
+kospi 42 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+kosdaq 42 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+nasdaq 42 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+kospi 43 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+kosdaq 43 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+nasdaq 43 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+kospi 44 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+kosdaq 44 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb
+nasdaq 44 --label_mode xsret --top_n 50 --horizon 5 --lookback 8 --master_d_model 256 --tag pubcfg --variants master master_no_inter master_asset_emb

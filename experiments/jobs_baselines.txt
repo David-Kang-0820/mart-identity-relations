@@ -1,0 +1,144 @@
+# Baselines on the main task (original and MART-matched budget), incl. the 2026 holdout
+kospi 42 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 42 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 42 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 43 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 43 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 43 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 44 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 44 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 44 --baselines_only --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 42 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 42 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 42 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kospi 43 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 43 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 43 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kospi 44 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 44 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 44 --baselines_only --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kospi 42 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 42 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 42 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 43 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 43 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 43 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 44 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kosdaq 44 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+nasdaq 44 --baselines_only --years 2026 --models persistence markov logreg lstm xgboost lightgbm tcn dlinear patchtst
+kospi 42 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 42 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 42 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kospi 43 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 43 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 43 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kospi 44 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+kosdaq 44 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+nasdaq 44 --baselines_only --years 2026 --tag eq40 --models lstm tcn dlinear patchtst --baseline_epochs 40 --baseline_patience 8
+
+# TCN at the matched budget, seeds 45/46
+kospi 45 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+kosdaq 45 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+nasdaq 45 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+kospi 46 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+kosdaq 46 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+nasdaq 46 --baselines_only --models tcn --baseline_epochs 40 --baseline_patience 8 --tag eq40
+
+# Baselines without one-hot, per-asset standardization, pooled labels, longer horizons
+kospi 42 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kosdaq 42 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+nasdaq 42 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kospi 43 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kosdaq 43 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+nasdaq 43 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kospi 44 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kosdaq 44 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+nasdaq 44 --baselines_only --models tcn dlinear --no_asset_id --tag noid
+kospi 42 --baselines_only --models tcn dlinear --std_mode per_asset
+kosdaq 42 --baselines_only --models tcn dlinear --std_mode per_asset
+nasdaq 42 --baselines_only --models tcn dlinear --std_mode per_asset
+kospi 43 --baselines_only --models tcn dlinear --std_mode per_asset
+kosdaq 43 --baselines_only --models tcn dlinear --std_mode per_asset
+nasdaq 43 --baselines_only --models tcn dlinear --std_mode per_asset
+kospi 44 --baselines_only --models tcn dlinear --std_mode per_asset
+kosdaq 44 --baselines_only --models tcn dlinear --std_mode per_asset
+nasdaq 44 --baselines_only --models tcn dlinear --std_mode per_asset
+kospi 42 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kosdaq 42 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+nasdaq 42 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kospi 43 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kosdaq 43 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+nasdaq 43 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kospi 44 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kosdaq 44 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+nasdaq 44 --baselines_only --models tcn dlinear --std_mode per_asset --no_asset_id --tag noid
+kospi 42 --baselines_only --models tcn dlinear --label_mode pooled
+kosdaq 42 --baselines_only --models tcn dlinear --label_mode pooled
+nasdaq 42 --baselines_only --models tcn dlinear --label_mode pooled
+kospi 43 --baselines_only --models tcn dlinear --label_mode pooled
+kosdaq 43 --baselines_only --models tcn dlinear --label_mode pooled
+nasdaq 43 --baselines_only --models tcn dlinear --label_mode pooled
+kospi 44 --baselines_only --models tcn dlinear --label_mode pooled
+kosdaq 44 --baselines_only --models tcn dlinear --label_mode pooled
+nasdaq 44 --baselines_only --models tcn dlinear --label_mode pooled
+kospi 42 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kosdaq 42 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+nasdaq 42 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kospi 43 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kosdaq 43 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+nasdaq 43 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kospi 44 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kosdaq 44 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+nasdaq 44 --baselines_only --models tcn dlinear --label_mode pooled --no_asset_id --tag noid
+kospi 42 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kosdaq 42 --baselines_only --models persistence markov tcn dlinear --horizon 5
+nasdaq 42 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kospi 43 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kosdaq 43 --baselines_only --models persistence markov tcn dlinear --horizon 5
+nasdaq 43 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kospi 44 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kosdaq 44 --baselines_only --models persistence markov tcn dlinear --horizon 5
+nasdaq 44 --baselines_only --models persistence markov tcn dlinear --horizon 5
+kospi 42 --baselines_only --models persistence markov tcn dlinear --horizon 10
+kosdaq 42 --baselines_only --models persistence markov tcn dlinear --horizon 10
+nasdaq 42 --baselines_only --models persistence markov tcn dlinear --horizon 10
+kospi 43 --baselines_only --models persistence markov tcn dlinear --horizon 10
+kosdaq 43 --baselines_only --models persistence markov tcn dlinear --horizon 10
+nasdaq 43 --baselines_only --models persistence markov tcn dlinear --horizon 10
+kospi 44 --baselines_only --models persistence markov tcn dlinear --horizon 10
+kosdaq 44 --baselines_only --models persistence markov tcn dlinear --horizon 10
+nasdaq 44 --baselines_only --models persistence markov tcn dlinear --horizon 10
+
+# Robustness: task (0,20) and top-50 universe
+kospi 42 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kosdaq 42 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+nasdaq 42 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kospi 43 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kosdaq 43 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+nasdaq 43 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kospi 44 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kosdaq 44 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+nasdaq 44 --baselines_only --horizon 20 --models persistence markov tcn dlinear
+kospi 42 --baselines_only --top_n 50 --models persistence tcn dlinear
+kosdaq 42 --baselines_only --top_n 50 --models persistence tcn dlinear
+nasdaq 42 --baselines_only --top_n 50 --models persistence tcn dlinear
+kospi 43 --baselines_only --top_n 50 --models persistence tcn dlinear
+kosdaq 43 --baselines_only --top_n 50 --models persistence tcn dlinear
+nasdaq 43 --baselines_only --top_n 50 --models persistence tcn dlinear
+kospi 44 --baselines_only --top_n 50 --models persistence tcn dlinear
+kosdaq 44 --baselines_only --top_n 50 --models persistence tcn dlinear
+nasdaq 44 --baselines_only --top_n 50 --models persistence tcn dlinear
+kospi 42 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+kosdaq 42 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+nasdaq 42 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+kospi 43 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+kosdaq 43 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+nasdaq 43 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+kospi 44 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+kosdaq 44 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+nasdaq 44 --baselines_only --top_n 50 --models tcn dlinear --no_asset_id --tag noid
+
+# Nasdaq without GOOG
+nasdaq 42 --exclude_codes GOOG --years 2020 2021 2022 2023 2024 2025 --baselines_only --models persistence tcn dlinear
+nasdaq 43 --exclude_codes GOOG --years 2020 2021 2022 2023 2024 2025 --baselines_only --models persistence tcn dlinear
+nasdaq 44 --exclude_codes GOOG --years 2020 2021 2022 2023 2024 2025 --baselines_only --models persistence tcn dlinear

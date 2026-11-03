@@ -1,0 +1,10 @@
+# raw market data and everything derived from it per run
+code/data/
+code/paper_final2/data/
+code/paper_final2/results/
+code/compare_algo/official_baselines/
+code/paper_final2/stock_codes.csv
+logs/
+paper/
+__pycache__/
+*.pt

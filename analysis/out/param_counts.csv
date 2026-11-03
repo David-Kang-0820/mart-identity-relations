@@ -1,0 +1,15 @@
+variant,regime_20,rank_50
+temporal_only,13155.0,13089
+temporal_asset_emb,13795.0,14689
+temporal_asset_bias,13215.0,13139
+temporal_cross_asset,22339.0,23233
+temporal_graph_feature_corr_classwise_r3,13798.0,14690
+corrvote_no_asset_emb,13158.0,13090
+corrvote_perm_p,13798.0,14690
+master,77968.0,77838
+master_asset_emb,79248.0,81038
+master_no_inter,44496.0,44366
+master_no_inter_asset_emb,45776.0,47566
+"master (d=256, lookback 8)",,1132622
+"master_asset_emb (d=256, lookback 8)",,1145422
+"master_no_inter (d=256, lookback 8)",,605518
